@@ -11,6 +11,8 @@ import static org.junit.Assert.assertThat;
 
 /**
  * 断言
+ *
+ * @author atom
  */
 public class PreconditionsTest {
 

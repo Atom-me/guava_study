@@ -8,6 +8,9 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * @author atom
+ */
 public class CloserTest {
 
     public static void main(String[] args) {

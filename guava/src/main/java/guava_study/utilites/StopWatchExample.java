@@ -6,6 +6,9 @@ import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author atom
+ */
 public class StopWatchExample {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(StopWatchExample.class);

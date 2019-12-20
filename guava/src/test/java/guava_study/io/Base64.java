@@ -4,6 +4,8 @@ import com.google.common.base.Preconditions;
 
 /**
  * 实现Base64 编码 解码
+ *
+ * @author atom
  */
 public final class Base64 {
     private Base64() {

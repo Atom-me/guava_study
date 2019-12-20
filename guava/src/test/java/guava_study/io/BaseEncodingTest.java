@@ -8,6 +8,8 @@ import static org.junit.Assert.assertThat;
 
 /**
  * 编码，解码 （不是加密解密）
+ *
+ * @author atom
  */
 public class BaseEncodingTest {
 

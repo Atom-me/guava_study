@@ -11,6 +11,9 @@ import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.core.IsNull.nullValue;
 import static org.junit.Assert.assertThat;
 
+/**
+ * @author atom
+ */
 public class StringTest {
 
     @Test

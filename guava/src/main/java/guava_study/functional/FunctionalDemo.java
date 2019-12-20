@@ -8,6 +8,9 @@ import javax.annotation.Nullable;
 import java.io.IOException;
 import java.net.ServerSocket;
 
+/**
+ * @author atom
+ */
 public class FunctionalDemo {
 
     public static void main(String[] args) throws IOException {

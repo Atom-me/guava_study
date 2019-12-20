@@ -20,6 +20,8 @@ import static org.junit.Assert.fail;
 
 /**
  * 字符串拼接
+ *
+ * @author atom
  */
 public class JoinerTest {
 

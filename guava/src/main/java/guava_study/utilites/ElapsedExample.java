@@ -2,6 +2,9 @@ package guava_study.utilites;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author atom
+ */
 public class ElapsedExample {
 
     public static void main(String[] args) throws InterruptedException {

@@ -11,6 +11,8 @@ import static org.junit.Assert.assertThat;
 
 /**
  * 字符串分割
+ *
+ * @author atom
  */
 public class SplitterTest {
 
