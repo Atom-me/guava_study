@@ -18,6 +18,7 @@ public class DeadEventBusExample {
         eventBus.register(deadEventListener);
         eventBus.post("hello");
 
+        // unregister 之后 ，在post消息，listener就收不到了
         eventBus.unregister(deadEventListener);
         eventBus.post("hello");
         eventBus.post("hello");
