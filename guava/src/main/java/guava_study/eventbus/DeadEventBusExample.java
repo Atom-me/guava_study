@@ -8,14 +8,22 @@ import guava_study.eventbus.listeners.DeadEventListener;
  */
 public class DeadEventBusExample {
     public static void main(String[] args) {
+        final DeadEventListener deadEventListener = new DeadEventListener();
         final EventBus eventBus = new EventBus("DeadEventBus"){
             @Override
             public String toString() {
                 return "DEAD-EVENT-BUS";
             }
         };
-        eventBus.register(new DeadEventListener());
+        eventBus.register(deadEventListener);
         eventBus.post("hello");
+
+        eventBus.unregister(deadEventListener);
+        eventBus.post("hello");
+        eventBus.post("hello");
+        eventBus.post("hello");
+        eventBus.post("hello");
+
 
     }
 }
