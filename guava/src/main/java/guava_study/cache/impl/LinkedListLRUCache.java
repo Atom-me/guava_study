@@ -13,6 +13,8 @@ import java.util.Map;
  * 使用 LinkedList 实现LRU算法
  * <p>
  * LinkedList 存放 缓存的key, HashMap 存放缓存。
+ * <p>
+ * 这种强引用的缓存，有一个问题就是 可能会发生OOM ，可以使用softReference 做优化
  */
 public class LinkedListLRUCache<K, V> implements LRUCache<K, V> {
 
