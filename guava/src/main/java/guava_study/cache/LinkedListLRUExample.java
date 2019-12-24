@@ -1,4 +1,6 @@
-package guava_study.cache.impl;
+package guava_study.cache;
+
+import guava_study.cache.impl.LinkedListLRUCache;
 
 /**
  * @author Atom
