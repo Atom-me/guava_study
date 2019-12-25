@@ -8,6 +8,8 @@ import org.junit.Test;
 import java.util.HashMap;
 
 /**
+ * Multimap 是一键多值的map，相同key的数据不会被覆盖，而是把新增的value放到 value集合里
+ *
  * @author Atom
  */
 public class MultimapsExamples {
