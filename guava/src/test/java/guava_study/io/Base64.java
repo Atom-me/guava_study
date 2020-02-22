@@ -12,6 +12,7 @@ public final class Base64 {
     }
 
 
+    //Base64编码表
     private static final String CODE_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
     private static char[] CODE_DICT = CODE_STRING.toCharArray();
 
@@ -78,7 +79,7 @@ public final class Base64 {
      * 1,先把字符串后面的等号都删掉变为 YQ
      * 2,然后 根据base64 字符表 找到Y和Q对应的索引是 24 和 16
      * 3,然后 将 24 和16 转为 两个6位二进制数据 得到 11000 和 10000 不够6位 前面补0 就是  011000 和 010000
-     * 4,然后 把他们合在一起 011000010000 按标准二进制（一字节8位 1byte ➡ 8位 ）合并之后的长度除以8 得到 01100001
+     * 4,然后 把他们合在一起 011000010000 按标准二进制（一字节8位 1byte ➡ 8位 ）合并之后的长度除以8（按每8位分割） 得到 01100001
      * 5,然后 把 01100001 换算位 十进制得到 97
      * 6,然后 查询ascii码表找到对应字符 小写 a
      *
@@ -96,7 +97,7 @@ public final class Base64 {
 
         String base64Binary = toBase64Binary(temp);
 
-        // 转为8位二进制 ，然后 换算位十进制数据
+        // 转为8位二进制 ，然后 换算为十进制数据
         for (int i = 0; i < base64Binary.length() / 8; i++) {
             int begin = i * 8;
             String str = base64Binary.substring(begin, begin + 8);

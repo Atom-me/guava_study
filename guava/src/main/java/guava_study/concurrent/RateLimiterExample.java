@@ -21,8 +21,8 @@ public class RateLimiterExample {
 
 
         IntStream.range(0, 10).forEach(i -> {
-//                    service.submit(RateLimiterExample::testLimiter);
-                    service.submit(RateLimiterExample::testSemaphore);
+                    service.submit(RateLimiterExample::testLimiter);
+//                    service.submit(RateLimiterExample::testSemaphore);
 
                 }
         );
